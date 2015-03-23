@@ -68,18 +68,18 @@ public class Sorts
     {
       if(nA > mid)
       {
-         temp[i] = a[nB];
-         nB++;
+        temp[i] = a[nB];
+        nB++;
       } 
       else if (nB > last)
       {
-         temp[i] = a[nA];
-         nA++;
+        temp[i] = a[nA];
+        nA++;
       }
       else if (a[nA] > a[nB])
       {
-         temp[i] = a[nA];
-         nA++;
+        temp[i] = a[nA];
+        nA++;
       } 
       else
       {
@@ -87,6 +87,7 @@ public class Sorts
          nA++;
       } 
     }
+
     for (int i = first;  i <= last; i++)
     {
       a[i] = temp[i];
